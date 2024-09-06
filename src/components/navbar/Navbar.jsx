@@ -6,8 +6,8 @@ const Navbar = () => {
         <div className="wrapper">
             <span>Ahmet Emre Çakmak</span>
             <div className="social">
-                <a href="#"><img src="/linkedin.png" alt="" /></a>
-                <a href="#"><img src="/github.png" alt="" /></a>
+                <a href="https://www.linkedin.com/in/ahmet-emre-%C3%A7akmak-46092b240/"><img src="/linkedin.png" alt="" /></a>
+                <a href="https://github.com/ahmetemree"><img src="/github.png" alt="" /></a>
             </div>
         </div>
     </div>

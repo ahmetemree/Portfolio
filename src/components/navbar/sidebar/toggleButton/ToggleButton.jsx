@@ -1,8 +1,8 @@
 
-const ToggleButton = () => {
+const ToggleButton = ({setOpen}) => {
   return (
-    <button className=''>
-        
+    <button className='' onClick={()=>setOpen(prev=>!prev)}>
+        Button 
     </button>
   )
 }

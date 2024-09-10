@@ -3,6 +3,7 @@
   overflow: hidden;
   background: linear-gradient(180deg, #151533, #232363);
   position: relative;
+  z-index: -999999;
 
   .wrapper {
     max-width: 1200px;

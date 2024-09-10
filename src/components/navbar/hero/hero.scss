@@ -3,13 +3,13 @@
   overflow: hidden;
   background: linear-gradient(180deg, #151533, #232363);
   position: relative;
-  z-index: -999999;
+//   z-index: -999999;
 
   .wrapper {
     max-width: 1200px;
     height: 100%;
     margin: auto;
-    z-index: -999;
+    // z-index: -999;
 
     .textContainer {
       height: 100%;
@@ -32,6 +32,8 @@
       }
 
       .buttons{
+        z-index: 999;
+
         button{
             padding: 20px;
             border: 1px solid white;
@@ -45,6 +47,8 @@
       }
       img {
         width: 50px;
+        margin: 0;
+        padding: 0;
       }
     }
   }
@@ -57,5 +61,16 @@
     img {
       width: 720px;
     }
+  }
+
+  .slidingTextContainer{
+    position: absolute;
+    font-size: 50vh;
+    bottom: -120px;
+    white-space: nowrap;
+    color: #ffffff09;
+    // z-index: -9999999999999;
+    width: 50%;
+    font-weight: bold;
   }
 }

@@ -5,6 +5,7 @@
     justify-content: center;
     background-color: white;
     color: black;
+    z-index: 99999;
 
     .bg{
         position: fixed;
@@ -22,6 +23,7 @@
             align-items: center;
             justify-content: center;
             gap: 20px;
+            z-index: 9999;
 
             a{
                 font-size: 40px;

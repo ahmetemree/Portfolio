@@ -1,4 +1,5 @@
 import "./app.scss"
+import { Analytics } from "@vercel/analytics/react"
 import Navbar from "./components/navbar/Navbar";
 const App = () => {
   return <div>

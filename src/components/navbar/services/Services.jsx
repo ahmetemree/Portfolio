@@ -8,6 +8,7 @@ const Services = () => {
           I can help your business grow up
           <br /> and move forward
         </p>
+        <hr />
       </motion.div>
       <motion.div className="titleContainer">
         <div className="title">
@@ -20,20 +21,38 @@ const Services = () => {
           <h1>
             <b>For Your</b> Business
           </h1>
-          <button>What I Can Do?</button>
+          <button>What Can I Do?</button>
         </div>
       </motion.div>
       <motion.div className="listContainer">
-        <div className="box">
-          <h2>Branding</h2>
+        <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
+          <h2>Experience</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quod
-            placeat maiores in maxime nemo. Laudantium error id explicabo. Ipsum
-            sequi harum dolor perspiciatis sed, laudantium optio hic? Eius,
-            autem.
+            I can create your software with all my experiences gained from past projects which I developed.
           </p>
           <button>Go</button>
-        </div>
+        </motion.div>
+        <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
+          <h2>User-Friendly Softwares</h2>
+          <p>
+          I care about user experience while using the product. User experience in my projects always has priority!
+          </p>
+          <button>Go</button>
+        </motion.div>
+        <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
+          <h2>Secure</h2>
+          <p>
+            I consider the security issue with all my software products. Your data and your privacy always under protection!
+          </p>
+          <button>Go</button>
+        </motion.div>
+        <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
+          <h2>Faster Products</h2>
+          <p>
+            As a Software Engineer, I can say that the software product should have fast interface and smooth transitions. Your software will definitely all of these!
+          </p>
+          <button>Go</button>
+        </motion.div>
       </motion.div>
     </motion.div>
   );

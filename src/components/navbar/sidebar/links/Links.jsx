@@ -27,6 +27,18 @@ const Links = () => {
   };
   const items = ["Homepage", "Services", "Portfolio", "Contact", "About"];
 
+  const handleScroll = (event) => {
+    event.preventDefault();
+    const targetId = event.currentTarget.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <motion.div className="links" variants={variants}>
       {items.map((item) => (
@@ -41,6 +53,7 @@ const Links = () => {
             borderRadius: "5px",
           }}
           whileTap={{scale:0.95}}
+          onClick={handleScroll} // Click event for smooth scrolling
         >
           {item}
         </motion.a>

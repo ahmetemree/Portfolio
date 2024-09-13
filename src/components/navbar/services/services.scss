@@ -1,3 +1,5 @@
+@import "../../../app.scss";
+
 .services{
     background: linear-gradient(180deg, #151533, #1f1f55);
     height: 100%;
@@ -11,6 +13,13 @@
         align-items: center;
         gap: 20px;
 
+        @include mobile{
+            align-self: center;
+            text-align: center;
+            flex-direction: column;
+            margin-top: 25px;
+        }
+
         p{
             font-weight: 200;
             font-size: 20px;
@@ -22,6 +31,10 @@
             width: 500px;
             border: none;
             border-top: 0.5px solid gray ;
+
+            @include mobile{
+                width: 300px;
+            }
         }
     }
     .titleContainer{
@@ -31,31 +44,57 @@
         flex-direction: column;
         align-items: center;
 
+        @include mobile{
+            width: 100%;
+            flex: 0;
+        }
+
         .title{
             display: flex;
             gap: 20px;
             align-items: center;
+
+            @include mobile{
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
 
             img{
                 width: 300px;
                 height: 100px;
                 border-radius: 50px;
                 object-fit: cover;
+
+                @include mobile{
+                    width: 200px;
+                    height: 50px;
+                 }
             }
 
             h1{
                 font-size: 96px;
                 font-weight: 100; 
+                @include mobile{
+                   font-size: 36px;
+                }
             }
 
             button{
                 width: 300px;
                 height: 100px;
                 border-radius: 50px;
-                background-color: rgb(174, 0, 255);
+                background-color: rgb(189, 108, 226);
                 border: none;
                 font-size: 24px;
                 cursor: pointer;
+                padding: 5px;
+
+                @include mobile{
+                    font-size: 16px;
+                    width: 150px;
+                    height: 50px;
+                 }
             }
         }
     }
@@ -65,7 +104,12 @@
         max-width: 1200px;
         margin: auto;
         gap: 10px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
+
+        @include mobile{
+            flex-direction: column;
+            width: 100%;
+         }
 
         .box{
             padding: 50px;
@@ -74,11 +118,34 @@
             flex-direction: column;
             justify-content: space-between;
             border-radius: 10px;
-            button{
-                padding: 10px;
-                background-color:  rgb(210, 164, 231);
+
+            @include mobile{
                 border: none;
-                cursor: pointer;
+                align-items: center;
+                justify-content: center; 
+                gap: 20px;
+                padding: 10px;
+             }
+
+            p{
+                @include mobile{
+                    display: none;
+                 }
+            }
+            .buttons{
+                display: flex;
+                gap: 15px;
+                button{
+                    padding: 10px;
+                    background-color:  rgb(189, 108, 226);
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    @include mobile{
+                        padding: 10px;
+                    }
+                    
+                }
             }
         }
     }

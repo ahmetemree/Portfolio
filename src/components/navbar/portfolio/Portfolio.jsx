@@ -2,13 +2,13 @@ import { useRef } from "react";
 import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
-    {
-        id: 1,
-        title: "SmartAI",
-        img: "./smartAI.png",
-        desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam omnis sunt perspiciatis ea aut minus, veritatis minima repudiandae culpa, officiis incidunt dolorem similique illum cumque a modi id esse vero.",
-        website: "https://smart-ai-two.vercel.app/",
-      },
+  {
+    id: 1,
+    title: "SmartAI",
+    img: "./smartAI.png",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam omnis sunt perspiciatis ea aut minus, veritatis minima repudiandae culpa, officiis incidunt dolorem similique illum cumque a modi id esse vero.",
+    website: "https://smart-ai-two.vercel.app/",
+  },
   {
     id: 2,
     title: "Booking-App",
@@ -23,7 +23,7 @@ const items = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam omnis sunt perspiciatis ea aut minus, veritatis minima repudiandae culpa, officiis incidunt dolorem similique illum cumque a modi id esse vero.",
     website: "https://chatss-app.vercel.app/",
   },
-  
+
   {
     id: 4,
     title: "Pethomealpi",
@@ -76,7 +76,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>Featured Works</h1>
+        <h1>Projects</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (

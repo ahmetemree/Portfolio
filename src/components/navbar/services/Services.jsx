@@ -26,8 +26,8 @@ const Services = () => {
       className="services"
       variants={variants}
       initial="initial"
-      // animate="animate"
-      whileInView="animate"
+      animate="animate"
+      // whileInView="animate"
     // ref={ref}
     // animate={isInView && "animate"}
     >
@@ -49,7 +49,7 @@ const Services = () => {
           <h1>
             <motion.b whileHover={{color:"rebeccapurple"}}>For Your</motion.b> Business
           </h1>
-          <button>What Can I Do?</button>
+          <button>What Can I Offer You?</button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>
@@ -62,7 +62,7 @@ const Services = () => {
             I can create your software with all my experiences gained from past
             projects which I developed.
           </p>
-          <button>Go</button>
+          
         </motion.div>
         <motion.div
           className="box"
@@ -73,7 +73,7 @@ const Services = () => {
             I care about user experience while using the product. User
             experience in my projects always has priority!
           </p>
-          <button>Go</button>
+          
         </motion.div>
         <motion.div
           className="box"
@@ -84,7 +84,7 @@ const Services = () => {
             I consider the security issue with all my software products. Your
             data and your privacy always under protection!
           </p>
-          <button>Go</button>
+          
         </motion.div>
         <motion.div
           className="box"
@@ -96,7 +96,11 @@ const Services = () => {
             have fast interface and smooth transitions. Your software will
             definitely all of these!
           </p>
-          <button>Go</button>
+          <div className="buttons">
+
+          <a href="/#Portfolio"><button>See My Projects</button></a>
+          <a href="/#Contact"><button>Reach Me</button></a>
+          </div>
         </motion.div>
       </motion.div>
     </motion.div>

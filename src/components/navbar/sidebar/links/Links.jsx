@@ -53,7 +53,7 @@ const Links = () => {
             borderRadius: "5px",
           }}
           whileTap={{scale:0.95}}
-          onClick={handleScroll} // Click event for smooth scrolling
+          onClick={handleScroll}
         >
           {item}
         </motion.a>

@@ -3,11 +3,11 @@ import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
-    id: 1,
-    title: "Turbo Tech Oto Aksesuar",
-    img: "./turbotech.png",
-    desc: "A car accessories shopping brand which you can get your needs from there!",
-    website: "https://turbotechotoaksesuar.com/",
+    id: 7,
+    title: "CatPet",
+    img: "https://res.cloudinary.com/dknfc65z0/image/upload/v1766864631/catpet/animals/yb0uuphmwtlg33jaibcs.png",
+    desc: "A pet adoption and care platform for cats and other animals.",
+    website: "https://catpet.app/",
   },
   {
     id: 2,
@@ -15,6 +15,13 @@ const items = [
     img: "./aistrolog.png",
     desc: "An AI supported astrology assistant application which specified only for you.",
     website: "https://ai-strolog.com/",
+  },
+  {
+    id: 1,
+    title: "Turbo Tech Oto Aksesuar",
+    img: "./turbotech.png",
+    desc: "A car accessories shopping brand which you can get your needs from there!",
+    website: "https://turbotechotoaksesuar.com/",
   },
   {
     id: 3,
